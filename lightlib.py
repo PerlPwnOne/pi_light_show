@@ -13,6 +13,11 @@ def initialize():
         GPIO.setup(i, GPIO.OUT)
         GPIO.output(i, GPIO.HIGH)    
 
+# cleanup relays, sets them all to GPIO.IN
+def cleanup():
+    GPIO.cleanup()
+
+
 
 
 # turn them all on/off
