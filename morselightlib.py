@@ -125,7 +125,7 @@ def morse_parse_string(socketnum, string, delay):
             time.sleep(delay)
             dash(socketnum, delay)
             time.sleep(delay)
-            dot(socketnum, delay
+            dot(socketnum, delay)
         if l == "q":
             dash(socketnum, delay)
             time.sleep(delay)
