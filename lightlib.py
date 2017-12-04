@@ -19,7 +19,6 @@ def cleanup():
 
 
 
-
 # turn them all on/off
 def all(opt):
     if opt == 'on':
