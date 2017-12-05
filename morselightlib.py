@@ -1,10 +1,9 @@
 #!/usr/bin/python
 import RPi.GPIO as GPIO
 import time
+import pinconfig as cfg
 
-# This is hard-coded so I don't have to pass it every time. A true lib would expect the pinList to be passed :)
-pinList = [2, 3, 4, 17, 27, 22, 10, 9, 11, 5, 6, 13, 19, 26, 21, 20]
-
+pinList = cfg.pinList
 
 def dot(socketnum, delay):
     GPIO.output(socketnum, GPIO.LOW)
