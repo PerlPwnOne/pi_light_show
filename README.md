@@ -5,13 +5,13 @@ IMPORTANT:
 update the pinconfig.py with YOUR pin configuration from your RPi as it is used by:
 <br>    lightlib.py
 <br>    morselightlib.py
-<p>
-<p>Example crontab:
-<p>#Christmas Lights 2017-12-19
-<p>#on at 5pm
-<p>0 17 * * * /home/pi/gitroot/pi_light_show/rob_example.py
-<p>#kill script at 1AM
-<p>0 1 * * * killall rob_example.py
-<p>#ensure all off at 1:05AM
-<p>5 1 * * * /home/pi/gitroot/pi_light_show/off.py
+<br>
+<br>Example crontab:
+<br>#Christmas Lights 2017-12-19
+<br>#on at 5pm
+<br>0 17 * * * /home/pi/gitroot/pi_light_show/rob_example.py
+<br>#kill script at 1AM
+<br>0 1 * * * killall rob_example.py
+<br>#ensure all off at 1:05AM
+<br>5 1 * * * /home/pi/gitroot/pi_light_show/off.py
 
