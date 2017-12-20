@@ -29,14 +29,16 @@ def all(opt):
         for i in pinList:
             GPIO.output(i, GPIO.HIGH)
 
-# ok, randomize for sec=seconds with delay=delay between...
-def allrando(sec, delay):
+
+# ok, randomize for sec=seconds with delay=delay between, with as many as num=num on at the same time...
+def allrando(sec, delay, num=1):
     t_end = time.time() + sec
     while time.time() < t_end:
-        i = random.sample(pinList, 5)
+        i = random.sample(pinList, num)
         GPIO.output(i, GPIO.LOW)
         time.sleep(delay);
         GPIO.output(i, GPIO.HIGH)
+
 
 # turn socket one on/off
 def one(opt):
