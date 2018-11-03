@@ -1,8 +1,11 @@
 # pi_light_show
 Automating the functionality of using a raspberry pi to control lights
+Great reference for more information on setting up / configuring your rPi and GPIO
+
+https://opensourceforu.com/2017/07/introduction-raspberry-pi-gpio-programming-using-python/
 
 IMPORTANT:
-update the pinconfig.py with YOUR pin configuration from your RPi as it is used by:
+update lib/pinconfig.py with YOUR pin configuration from your RPi as it is used by:
 <br>    lightlib.py
 <br>    morselightlib.py
 <br>
