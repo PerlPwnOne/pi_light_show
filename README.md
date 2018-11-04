@@ -17,11 +17,18 @@ Great reference for more information on setting up / configuring your rPi and GP
 
 
 ## Example crontab:
-*#Christmas Lights 2017-12-19
-*#on at 5pm
+
+#Christmas Lights 2017-12-19
+
+#on at 5pm
+
 0 17 * * * /home/pi/gitroot/pi_light_show/rob_example.py
+
 #kill script at 1AM
+
 0 1 * * * killall rob_example.py
+
 #ensure all off at 1:05AM
+
 5 1 * * * /home/pi/gitroot/pi_light_show/off.py
 
